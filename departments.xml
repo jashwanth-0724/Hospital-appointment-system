@@ -1,1 +1,17 @@
-
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hospital SYSTEM "departments.dtd">
+<hospital xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="departments.xsd">
+    <departments>
+        <department id="1">
+            <name>Cardiology</name>
+            <description>Heart and cardiovascular care</description>
+            <head_doctor>Dr. John Smith</head_doctor>
+        </department>
+        <department id="2">
+            <name>Neurology</name>
+            <description>Brain and nervous system</description>
+            <head_doctor>Dr. Sarah Jones</head_doctor>
+        </department>
+    </departments>
+</hospital>
