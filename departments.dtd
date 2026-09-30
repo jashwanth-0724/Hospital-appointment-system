@@ -1,1 +1,7 @@
-
+<!ELEMENT hospital (departments)>
+<!ELEMENT departments (department+)>
+<!ELEMENT department (name, description, head_doctor)>
+<!ATTLIST department id CDATA #REQUIRED>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT head_doctor (#PCDATA)>
