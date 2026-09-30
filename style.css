@@ -1,0 +1,140 @@
+:root {
+    --primary-color: #4f46e5;
+    --secondary-color: #10b981;
+    --dark-bg: #111827;
+    --light-bg: #f3f4f6;
+    --surface: #ffffff;
+    --text-main: #1f2937;
+    --text-muted: #6b7280;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: var(--text-main);
+    background-color: var(--light-bg);
+}
+
+/* Nav */
+.navbar {
+    padding: 1rem 0;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.95) !important;
+}
+
+/* Hero Section */
+.hero-section {
+    padding-top: 120px;
+    height: 100vh;
+    min-height: 600px;
+    background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-image-placeholder {
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    position: relative;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(16px);
+    border-radius: 1.5rem;
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* Cards & Micro-animations */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 1rem;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1) !important;
+}
+
+.icon-wrapper {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Forms */
+.form-control, .form-select {
+    padding: 0.75rem 1rem;
+    border-radius: 0.75rem;
+    border: 1px solid #d1d5db;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(79, 70, 229, 0.25);
+}
+
+/* Buttons */
+.btn {
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: #4338ca;
+    border-color: #4338ca;
+    transform: scale(1.02);
+}
+
+/* Dashboard Sidebar/Layout */
+.dashboard-wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+.sidebar {
+    width: 250px;
+    background: var(--surface);
+    border-right: 1px solid #e5e7eb;
+    padding-top: 80px;
+}
+.sidebar .nav-link {
+    color: var(--text-muted);
+    padding: 1rem 1.5rem;
+    font-weight: 500;
+    border-left: 3px solid transparent;
+}
+.sidebar .nav-link:hover, .sidebar .nav-link.active {
+    color: var(--primary-color);
+    background: rgba(79, 70, 229, 0.05);
+    border-left-color: var(--primary-color);
+}
+.main-content {
+    flex-grow: 1;
+    padding: 100px 2rem 2rem;
+    background: var(--light-bg);
+}
+
+/* Badge Status */
+.status-badge {
+    padding: 0.35em 0.65em;
+    font-size: 0.75em;
+    font-weight: 700;
+    border-radius: 1rem;
+}
+.status-PENDING { background-color: #fef3c7; color: #d97706; }
+.status-CONFIRMED { background-color: #d1fae5; color: #059669; }
+.status-COMPLETED { background-color: #e0e7ff; color: #4338ca; }
+.status-CANCELLED { background-color: #fee2e2; color: #dc2626; }
