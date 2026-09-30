@@ -1,1 +1,26 @@
+# Maven
+target/
+*.jar
+*.war
+*.ear
+*.class
 
+# IDE
+.idea/
+.eclipse/
+*.iml
+*.project
+*.classpath
+*.settings/
+.vscode/
+
+# Node.js
+node_modules/
+npm-debug.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
